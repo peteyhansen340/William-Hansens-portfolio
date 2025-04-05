@@ -59,15 +59,6 @@
     padding: 4em;
     font-size: 18px;
   }
-  header {
-    background-color: var(--primary);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-  }
   
   
   nav ul {
