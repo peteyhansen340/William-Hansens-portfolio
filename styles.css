@@ -39,16 +39,39 @@
   h2 {
     text-align: center;
   }
-  header {
-    padding: 1em;
-    text-align: center;
+  .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    position: relative;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
   }
-  header > h1,
-  header > h2 {
+  
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+ .site-info{
+  position:absolute;
+  left: 50%;
+  transform: translateX(50%);
+  text-align: center;
+ }
+  .site-info h1{
+    margin: 0;
+    font-size: 2rem;
     color: var(--headline-color-on-color);
   }
+  .site-info h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--headline-color-on-color);
+  }
+
   body {
     max-width: 1200px;
     margin: 0 auto;
