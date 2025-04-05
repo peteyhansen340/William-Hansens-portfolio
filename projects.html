@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="William Hansen's personal portfolio showcasing web development projects." />
+  <meta name="description" content="William Hansen's projects showcasing web development skills." />
   <title>William Hansen | Projects</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="scripts.js"></script>
@@ -11,35 +11,20 @@
 <body>
   <header>
     <div class="logo">William Hansen</div>
+    <div class="subtitle">Software Engineer</div>
     <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
     <nav id="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <!-- Add more links as necessary -->
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="projects">
-      <h1>My Projects</h1>
-
-      <div class="project">
-        <h2>Responsive Gallery</h2>
-        <img src="images/project1.jpg" alt="A preview of the responsive gallery project" />
-        <p>A photo gallery that adjusts to screen size, providing an interactive and accessible experience.</p>
-        <a href="#">View Project</a>
-      </div>
-
-      <div class="project">
-        <h2>JavaScript Calculator</h2>
-        <img src="images/project2.jpg" alt="A preview of the JavaScript calculator app" />
-        <p>A clean and functional calculator app built with JavaScript, offering basic arithmetic functions.</p>
-        <a href="#">View Project</a>
-      </div>
-      
-      <!-- More projects can be added here -->
+      <h1>Featured Projects</h1>
+      <div id="project-list"></div>
     </section>
   </main>
 
@@ -49,17 +34,36 @@
   </footer>
 
   <script>
-    // Navigation toggle
-    document.getElementById('menu-toggle').addEventListener('click', () => {
-      document.getElementById('main-nav').classList.toggle('open');
-    });
+    // Project data
+    const projects = [
+      {
+        title: "Responsive Gallery",
+        description: "A photo gallery that adjusts to screen size.",
+        image: "images/project1.jpg",
+        url: "projects.html#gallery"
+      },
+      {
+        title: "JavaScript Calculator",
+        description: "A clean and functional calculator app built with JS.",
+        image: "images/project2.jpg",
+        url: "projects.html#calculator"
+      }
+    ];
 
-    // Theme toggle
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme');
+    // Display projects
+    const projectList = document.getElementById('project-list');
+    projects.forEach(project => {
+      const div = document.createElement('div');
+      div.className = 'project';
+      div.innerHTML = `
+        <a href="${project.url}">
+          <img src="${project.image}" alt="${project.title}" />
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+        </a>
+      `;
+      projectList.appendChild(div);
     });
   </script>
 </body>
 </html>
-
-
