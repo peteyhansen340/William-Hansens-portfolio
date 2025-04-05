@@ -1,14 +1,32 @@
 /* styles.css */
+@import url("https://fonts..com/css?family=+open+sans|+montserrat|Fell+French+Canon+SC|Lato");
 
 :root {
-    --primary: #a1866f;
-    --secondary: #e0c7a7;
-    --accent: #8b5e3c;
-    --background: #f9f4ef;
-    --text: #2d2d2d;
-    --dark-bg: #2d2d2d;
-    --dark-text: #f9f4ef;
-  }
+  /* change the values below to your colors from your palette */
+  --primary-color: #6F1D1B;
+  --secondary-color: #BB9457;
+  --accent1-color: #432818;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "montserrat";
+  --paragraph-font: "open sans",Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+ }
   
   body {
     margin: 0;
@@ -22,7 +40,25 @@
     background-color: var(--dark-bg);
     color: var(--dark-text);
   }
-  
+  h2 {
+    text-align: center;
+  }
+  header {
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+  }
+  header > h1,
+  header > h2 {
+    color: var(--headline-color-on-color);
+  }
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+  }
   header {
     background-color: var(--primary);
     color: white;
@@ -33,10 +69,6 @@
     text-align: center;
   }
   
-  .logo {
-    font-size: 3rem;
-    font-weight: bold;
-  }
   
   nav ul {
     list-style: none;
@@ -46,10 +78,7 @@
     padding: 0;
     justify-content: center;
   }
-  .subtitle{
-  font-size: 1.2rem;
-  color:#555
-  }
+
 
   nav ul li {
     margin: 0 1rem;
