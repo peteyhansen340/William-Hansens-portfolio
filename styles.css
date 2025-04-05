@@ -60,6 +60,7 @@
   left: 50%;
   transform: translateX(50%);
   text-align: center;
+  background-color: var(--paragraph-background-color);
  }
   .site-info h1{
     margin: 0;
