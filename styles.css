@@ -98,7 +98,9 @@
     color: white;
     display: none;
   }
-  
+  contact-form{
+    align-items: center;
+  }
   main {
     padding: 3rem 1rem;
     text-align: center ;
