@@ -16,12 +16,12 @@ const projects = [
     {
       title: "Book Review Blog",
       description: "A clean and accessible blog layout styled with modern CSS and semantic HTML.",
-      link: "#"
+      link: "https://peteyhansen340.github.io/blog/"
     },
     {
       title: "Calculator App (Kotlin)",
       description: "A simple calculator built with Kotlin, showcasing core programming logic.",
-      link: "#"
+      link: "https://github.com/peteyhansen340/calculator4"
     }
   ];
   
