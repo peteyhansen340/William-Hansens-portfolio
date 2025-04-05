@@ -142,6 +142,7 @@
     display: grid;
     gap: 1rem;
     max-width: 600px;
+    align-items: center;
   }
   
   input,
@@ -152,8 +153,7 @@
   }
   
   button {
-    background-color: var(--accent);
-    color: white;
+    color: var( --primary-color);
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
