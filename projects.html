@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="William Hansen's web development projects." />
-  <title>Projects | William Hansen</title>
+  <meta name="description" content="William Hansen's personal portfolio showcasing web development projects." />
+  <title>William Hansen | Projects</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="scripts.js"></script>
 </head>
@@ -16,24 +16,30 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <!-- Add more links as necessary -->
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="projects-page">
-      <h1>Projects</h1>
-      <article id="gallery">
-        <h2>Responsive Gallery</h2>
-        <img src="images/project1.jpg" alt="Screenshot of the Responsive Gallery project">
-        <p>This photo gallery adjusts to screen size using CSS Grid and Flexbox. Built with HTML, CSS, and JavaScript.</p>
-      </article>
+    <section class="projects">
+      <h1>My Projects</h1>
 
-      <article id="calculator">
+      <div class="project">
+        <h2>Responsive Gallery</h2>
+        <img src="images/project1.jpg" alt="A preview of the responsive gallery project" />
+        <p>A photo gallery that adjusts to screen size, providing an interactive and accessible experience.</p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="project">
         <h2>JavaScript Calculator</h2>
-        <img src="images/project2.jpg" alt="Screenshot of the Calculator project">
-        <p>A clean, functional calculator app built with vanilla JavaScript. Includes error handling and responsive layout.</p>
-      </article>
+        <img src="images/project2.jpg" alt="A preview of the JavaScript calculator app" />
+        <p>A clean and functional calculator app built with JavaScript, offering basic arithmetic functions.</p>
+        <a href="#">View Project</a>
+      </div>
+      
+      <!-- More projects can be added here -->
     </section>
   </main>
 
@@ -41,5 +47,19 @@
     <p>&copy; 2025 William Hansen</p>
     <button id="theme-toggle">Toggle Theme</button>
   </footer>
+
+  <script>
+    // Navigation toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('main-nav').classList.toggle('open');
+    });
+
+    // Theme toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
 </body>
 </html>
+
+

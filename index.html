@@ -2,56 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>William Hansen's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="William Hansen's personal portfolio showcasing web development projects." />
+  <title>William Hansen | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="scripts.js"></script>
-
+  <script defer src="scripts.js"></script>
 </head>
 <body>
   <header>
     <div class="logo">William Hansen</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+    <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <!-- Add an "About" link to improve navigation and user flow -->
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="intro">
-      <h1>Hello, I'm William Hansen</h1>
-      <p>Welcome to my web development portfolio. Explore my work and get in touch!</p>
+      <h1>Welcome!</h1>
+      <p>I'm William Hansen, a web developer with a passion for clean, accessible, and dynamic websites. Explore my work below or get in touch!</p>
+      <img src="images/profile-placeholder.jpg" alt="A placeholder profile photo of William Hansen" />
     </section>
 
-    <section class="projects">
-      <h2>Featured Projects</h2>
-      <div class="project-list">
-        <!-- Projects will be added dynamically with JavaScript -->
-      </div>
+    <!-- Add these sections to improve content structure and user engagement -->
+    <section class="work-experience">
+      <h2>Work Experience</h2>
+      <p>Web Developer Intern at ABC Corp.</p>
+      <p>Freelance Web Developer</p>
     </section>
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
+    <section class="certificates">
+      <h2>Certificates</h2>
+      <p>Google Web Development Certificate</p>
+      <p>JavaScript Mastery</p>
     </section>
+
+    <section class="accomplishments">
+      <h2>Accomplishments</h2>
+      <p>Developed and launched several web applications for small businesses.</p>
+      <p>Contributed to open-source projects on GitHub.</p>
+    </section>
+
+    <!-- Featured projects moved to the child page -->
   </main>
 
   <footer>
     <p>&copy; 2025 William Hansen</p>
+    <button id="theme-toggle">Toggle Theme</button>
   </footer>
+
+  <script>
+    // Navigation toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('main-nav').classList.toggle('open');
+    });
+
+    // Theme toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
 </body>
 </html>
