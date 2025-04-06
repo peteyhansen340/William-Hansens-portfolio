@@ -23,6 +23,7 @@
         <li><a href="projects.html">Projects</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <main>
@@ -37,37 +38,4 @@
     <button id="theme-toggle">Toggle Theme</button>
   </footer>
 
-  <script>
-    // Project data
-    const projects = [
-      {
-        title: "Responsive Gallery",
-        description: "A photo gallery that adjusts to screen size.",
-        image: "images/project1.jpg",
-        url:""
-      },
-      {
-        title: "Book review blog",
-        description: "A clean and functional calculator app built with JS.",
-        image: "image/book blog.png",
-        url: ""
-      }
-    ];
-
-    // Display projects
-    const projectList = document.getElementById('project-list');
-    projects.forEach(project => {
-      const div = document.createElement('div');
-      div.className = 'project';
-      div.innerHTML = `
-        <a href="${project.url}">
-          <img src="${project.image}" alt="${project.title}" />
-          <h3>${project.title}</h3>
-          <p>${project.description}</p>
-        </a>
-      `;
-      projectList.appendChild(div);
-    });
-  </script>
-</body>
-</html>
+ 
