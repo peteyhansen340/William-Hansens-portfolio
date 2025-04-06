@@ -23,7 +23,7 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
     {
       title: "Calculator App (Kotlin)",
       description: "A simple calculator built with Kotlin, showcasing core programming logic.",
-      image: "images/calculator.jpg",
+      image: "images/Cal.png",
       link: "https://github.com/peteyhansen340/calculator4"
     }
   ];
