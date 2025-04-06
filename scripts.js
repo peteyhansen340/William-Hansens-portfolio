@@ -9,10 +9,10 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
   
   const projects = [
     {
-      title: "Responsive Photography Gallery",
-      description: "A photo gallery that adapts to different screen sizes using CSS Grid and JavaScript modals.",
-      image: "images/gallery.jpg", // ✅ Add the image path here
-      link: "#" // Replace with actual URL or anchor
+      title: "Credit Card form",
+      description: "A fun forms project displayed as a cedit card",
+      image: "images/card.png", // ✅ Add the image path here
+      link: "https://peteyhansen340.github.io/Cedit-Card/" // Replace with actual URL or anchor
     },
     {
       title: "Book Review Blog",
